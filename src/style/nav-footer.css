@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  width: 100vw;
+  min-height: 9rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 0.5rem;
+}
+nav .navActions {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid #eee;
+}
+nav .navActions > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  color: #fe5b5f;
+  font-weight: bold;
+}
+nav .navActions > a > img {
+  width: 2.7rem;
+}
+nav .navActions .searchInput {
+  width: 30vw;
+  height: 2.7rem;
+  border-radius: 40px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.259);
+}
+nav .navActions .searchInput form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0.5rem;
+}
+nav .navActions .searchInput form input {
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border-radius: 40px 0 0 40px;
+  padding: 0 1rem;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+nav .navActions .searchInput form .svgWrapper {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #fe5b5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .navActions .searchInput form .svgWrapper button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+nav .navActions .searchInput form .svgWrapper button svg {
+  color: #fff;
+  font-size: 1rem;
+}
+nav .navActions .userWrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 0.5rem;
+  z-index: 4;
+}
+nav .navActions .userWrapper > a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000;
+  padding: 0.4rem 0.8rem;
+  border-radius: 25px;
+  transition: 0.3s ease-in;
+}
+nav .navActions .userWrapper > a:hover {
+  background-color: rgba(204, 204, 204, 0.2274509804);
+}
+nav .navActions .userWrapper .profileContainer {
+  width: 5.6rem;
+  height: 2.8rem;
+  border: 1px #eee solid;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+}
+nav .navActions .userWrapper .profileContainer:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.139);
+}
+nav .navActions .userWrapper .profileContainer svg {
+  font-size: 1.3rem;
+  color: #555;
+}
+nav .navActions .userWrapper .profileContainer .userProfile {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .navActions .userWrapper .profileContainer .userProfile > svg {
+  width: 100%;
+  height: 100%;
+}
+nav .navActions .userWrapper .profileContainer .linksContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translate(-50%, 25%);
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.42);
+  border-radius: 5px;
+  display: none;
+}
+nav .navActions .userWrapper .profileContainer .linksContainer li {
+  margin: 0.5rem 0;
+  transition: 0.2s ease-in;
+  padding: 0.5rem 0;
+}
+nav .navActions .userWrapper .profileContainer .linksContainer li a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000;
+  padding: 0.2rem 1rem;
+}
+nav .navActions .userWrapper .profileContainer .linksContainer li:hover {
+  background-color: rgba(204, 204, 204, 0.262745098);
+}
+nav .categories {
+  width: 98%;
+  margin: 0 auto;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  overflow-x: scroll;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge and Firefox */
+}
+nav .categories::-webkit-scrollbar {
+  display: none;
+}
+nav .categories {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+nav .categories li {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+  transition: 0.3s ease-in;
+  color: #555;
+}
+nav .categories li svg {
+  font-size: 1.2rem;
+}
+nav .categories li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #555;
+}
+nav .categories li:hover a {
+  color: #fe5b5f;
+}
+
+.mobile-nav {
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #555;
+  position: absolute;
+  bottom: 0;
+}
+
+.showMe {
+  display: block !important;
+}
+
+@media screen and (max-width: 768px) {
+  nav .navActions {
+    justify-content: space-around;
+    padding: 0 2rem;
+    gap: 2rem;
+  }
+  nav .navActions a > p {
+    font-size: 3vw;
+  }
+  nav .navActions > a > img {
+    display: none !important;
+  }
+  nav .navActions .searchInput {
+    width: 45vw;
+  }
+  nav .navActions .userWrapper > a {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navActions {
+    justify-content: center !important;
+    padding: 0 0 !important;
+    gap: 0 !important;
+    border: none !important;
+  }
+  .navActions > a p {
+    display: none;
+  }
+  .navActions .searchInput {
+    width: 92vw !important;
+    height: 3rem !important;
+  }
+  .navActions .userWrapper {
+    display: none !important;
+  }
+}/*# sourceMappingURL=nav-footer.css.map */

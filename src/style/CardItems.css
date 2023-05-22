@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.cardsContainer {
+  width: 100vw;
+  min-height: 73vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+.cardsContainer article {
+  width: 18rem;
+  height: 23rem;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  margin: 1rem 0;
+}
+.cardsContainer article img {
+  width: 100%;
+  height: 16rem;
+  border-radius: 10px;
+}
+.cardsContainer article a {
+  color: #000;
+}
+.cardsContainer article h4 {
+  padding: 0.8rem 0 0.5rem 0.7rem;
+}
+.cardsContainer article p {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.7rem;
+  color: #555;
+}
+.cardsContainer article span {
+  font-weight: bold;
+  padding: 0 0.7rem;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+.cardsContainer article small {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 4.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+.cardsContainer article #wishList {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  font-size: 1.5rem;
+  color: #555;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+.cardsContainer article #wishList:hover {
+  opacity: 1;
+}
+.cardsContainer article .ownerPicContainer {
+  position: absolute;
+  bottom: 50%;
+  left: 1rem;
+  background-color: white;
+  width: 4rem;
+  height: 4.2rem;
+  border-radius: 0 7px 7px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.cardsContainer article .ownerPicContainer img {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #555;
+  margin-left: 5px;
+}
+.cardsContainer article .ownerPicContainer::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #cdc6c6;
+}
+.cardsContainer article .ownerPicContainer::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  bottom: 1px;
+  width: 7px;
+  height: 95%;
+  border-radius: 0 5px 5px 0;
+  background-color: #DBDBDB;
+  display: none;
+  transition: 0.3s ease-in;
+}
+.cardsContainer article .ownerPicContainer:hover::after {
+  display: block;
+}
+.cardsContainer article .ownerPicContainer:hover {
+  transform: translateY(-5px);
+}
+.cardsContainer .load_more {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.cardsContainer .load_more button {
+  width: 14rem;
+  height: 3rem;
+  border: none;
+  background-color: #FE5B5F;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.368627451);
+}
+.cardsContainer .load_more button:hover {
+  border: 2px solid black;
+  background-color: aliceblue;
+  color: #000;
+}/*# sourceMappingURL=CardItems.css.map */
