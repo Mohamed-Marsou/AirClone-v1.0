@@ -129,27 +129,144 @@
 }
 .cardsContainer .load_more {
   width: 100%;
-  height: 4rem;
+  min-height: 4rem;
+}
+
+.Filter {
+  position: sticky;
+  bottom: 1rem;
+  left: 50%;
+  background-color: #1f1f1f;
+  color: white;
+  width: 9rem;
+  height: 3rem;
+  transform: translateX(-50%);
+  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
-}
-.cardsContainer .load_more button {
-  width: 14rem;
-  height: 3rem;
-  border: none;
-  background-color: #FE5B5F;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  border-radius: 40px;
-  font-size: 1rem;
+  gap: 0.5rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.368627451);
 }
-.cardsContainer .load_more button:hover {
-  border: 2px solid black;
-  background-color: aliceblue;
-  color: #000;
+.Filter:hover {
+  transform: translateX(-50%) scale(1.03);
+}
+
+.filter_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(31, 31, 31, 0.1568627451);
+  width: 100vw;
+  height: 150vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.filter_container .filter_options {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50vw;
+  height: 80vh;
+  background-color: #fff;
+  z-index: 3;
+  transform: translate(50%, -10%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.filter_container .filter_options .close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2.2rem;
+  color: rgba(85, 85, 85, 0.6901960784);
+  cursor: pointer;
+}
+.filter_container .filter_options > h1 {
+  font-size: 2rem;
+  padding: 0 2.5%;
+}
+.filter_container .filter_options .slot {
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2.5%;
+  gap: 0.5rem;
+}
+.filter_container .filter_options .slot > h1 {
+  font-size: 1.1rem;
+}
+.filter_container .filter_options .slot .mapContainer {
+  width: 95%;
+  min-height: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.filter_container .filter_options .slot .mapContainer > img {
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid rgba(85, 85, 85, 0.3882352941);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.filter_container .filter_options .slot .mapContainer > img:hover {
+  transform: scale(1.03);
+}
+.filter_container .filter_options .slot .boxes {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+}
+.filter_container .filter_options .slot .boxes .box {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(85, 85, 85, 0.3882352941);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.filter_container .filter_options .slot .boxes .box:hover {
+  border: 1px solid #DB5255;
+}
+.filter_container .filter_options .slot .boxes .active_bx {
+  border: 1px solid #DB5255;
+  font-weight: bold;
+}
+.filter_container .filter_options form {
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+}
+.filter_container .filter_options form button {
+  background-color: #fc6b6d;
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 20px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.filter_container .filter_options form button:hover {
+  transform: scale(1.03);
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
 }/*# sourceMappingURL=CardItems.css.map */
