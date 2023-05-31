@@ -1,6 +1,9 @@
 import React from 'react';
 import '../style/MobileNav.css'
-import * as Icons from "react-icons/all";
+import { BsSearch } from 'react-icons/bs';
+import { GiSelfLove } from 'react-icons/gi';
+import { CgProfile } from 'react-icons/cg';
+
 
 const MobileNav = () => {
     const scrollToNavActions = () => {
@@ -16,7 +19,7 @@ const MobileNav = () => {
         <ul className='mobileNav'>
             <li onClick={scrollToNavActions}>
                 <a>
-                    <Icons.BsSearch />
+                    <BsSearch />
                 </a>
                 <a>
                     <p>Search</p>
@@ -24,7 +27,7 @@ const MobileNav = () => {
             </li>
             <li>
                 <a href="#">
-                    <Icons.GiSelfLove />
+                    <GiSelfLove />
                 </a>
                 <a href="#">
                     <p>wishlist</p>
@@ -32,7 +35,7 @@ const MobileNav = () => {
             </li>
             <li>
                 <a href="#">
-                    <Icons.CgProfile />
+                    <CgProfile />
                 </a>
                 <a href="#">
                     <p>Profile</p>

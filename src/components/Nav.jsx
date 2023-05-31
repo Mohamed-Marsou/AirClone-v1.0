@@ -3,7 +3,19 @@ import "../style/nav-footer.css";
 import logo from "../assets/airbnb.png";
 import FR from "../assets/france.png";
 import EN from "../assets/royaume-uni.png";
-import * as Icons from "react-icons/all";
+import { FaSearchLocation } from 'react-icons/fa';
+import { TfiWorld } from 'react-icons/tfi';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { BiUser } from 'react-icons/bi';
+import { MdBeachAccess } from 'react-icons/md';
+import { FaSwimmingPool } from 'react-icons/fa';
+import { AiTwotoneFire } from 'react-icons/ai';
+import { SiExpensify } from 'react-icons/si';
+import { GiWoodCabin } from 'react-icons/gi';
+import { AiFillEye } from 'react-icons/ai';
+import { MdBedroomParent } from 'react-icons/md';
+import { MdDirectionsBoatFilled } from 'react-icons/md';
+import { GiIsland } from 'react-icons/gi';
 
 const Nav = () => {
     const [showLinks, setShowLinks] = useState(false);
@@ -34,7 +46,7 @@ const Nav = () => {
                         <input type="search" id="navSearch" name="navSearch" placeholder="Look it up ..." />
                         <div className="svgWrapper">
                             <button>
-                                <Icons.FaSearchLocation />
+                                <FaSearchLocation />
                             </button>
                         </div>
                     </form>
@@ -45,7 +57,7 @@ const Nav = () => {
                     <div className="language" onClick={handleLangVis}>
 
                         <span id="lang" title="language" > 
-                            <Icons.BsGlobe />
+                            <TfiWorld/>
                         </span>
                        
                         <div className= {`lang_wrpper ${showLang ? "lanVisual" : ""}`} >
@@ -71,9 +83,9 @@ const Nav = () => {
                         </div>
                     </div>
                     <div className="profileContainer" onClick={handleProfileClick}>
-                        <Icons.GiHamburgerMenu />
+                        <GiHamburgerMenu/>
                         <div className="userProfile">
-                            <Icons.FaUserCircle />
+                            <BiUser />
                         </div>
 
                         <div className={`linksContainer ${showLinks ? "showMe" : ""}`}>
@@ -99,55 +111,55 @@ const Nav = () => {
             <div className="categories">
                 <li>
                     <a href="#">
-                        <Icons.MdBeachAccess/>
+                        <MdBeachAccess/>
                         Beach
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <Icons.FaSwimmingPool/>
+                        <FaSwimmingPool/>
                         Pools
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <Icons.AiTwotoneFire/>
+                        <AiTwotoneFire/>
                         Trending
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <Icons.SiExpensify/>
+                        <SiExpensify/>
                         Luxe
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <Icons.GiWoodCabin/>
+                        <GiWoodCabin/>
                         Cabins
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <Icons.AiFillEye/>
+                        <AiFillEye/>
                         views
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <Icons.MdBedroomParent/>
+                        <MdBedroomParent/>
                         Rooms
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <Icons.IoBoatSharp/>
+                        <MdDirectionsBoatFilled/>
                         Boats
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <Icons.GiIsland/>
+                        <GiIsland/>
                         Island
                     </a>
                 </li>

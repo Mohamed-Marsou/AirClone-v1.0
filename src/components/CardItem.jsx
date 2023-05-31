@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../style/CardItems.css'
-import * as Icons from "react-icons/all";
+
 import africa from "../assets/map/africa--middle-east2x-50.jpg"
 import america from "../assets/map/americas2x-50.jpg"
 import asia from "../assets/map/asia-pacific-2x-50.jpg"
 import europe from "../assets/map/europe2x-50.jpg"
 import glob from "../assets/map/JrxsrQsrl8KD88mosyxQf_1wCL08hN9W.jpg"
+import { AiFillStar } from 'react-icons/ai';
+import { AiTwotoneHeart } from 'react-icons/ai';
+import { FiFilter } from 'react-icons/fi';
+import { MdClose } from 'react-icons/md';
+
+
 const CartItem = ({ articles }) => {
 
     const handleOpen = () => {
@@ -51,11 +57,11 @@ const CartItem = ({ articles }) => {
                     <p>Charming studio near the Eiffel Tower</p>
                     <span>MAD 9525 total fee before tax</span>
                     <small>
-                        <Icons.AiFillStar />
+                        <AiFillStar />
                         4.5
                     </small>
                     <a id='wishList' href="#">
-                        <Icons.AiTwotoneHeart />
+                        <AiTwotoneHeart />
                     </a>
                     <div className="ownerPicContainer">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmoDdyUGzcWTltc_HjeCVi7-2yGIOjHu3HsA&usqp=CAU" alt="" />
@@ -97,7 +103,7 @@ const CartItem = ({ articles }) => {
             </div>
 
             <div className="Filter" onClick={handleOpen}>
-                <Icons.FiFilter />
+                <FiFilter />
                 Filter
             </div>
             <div className="filter_container hide ">
@@ -133,7 +139,7 @@ const CartItem = ({ articles }) => {
                         </button>
                     </form>
                     <div className="close" onClick={handleClose}>
-                        <Icons.MdClose />
+                        <MdClose />
                     </div>
                 </div>
             </div>

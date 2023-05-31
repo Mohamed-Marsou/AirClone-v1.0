@@ -273,7 +273,6 @@ nav .categories li:hover a {
   height: 7rem;
   border: 1px solid rgba(68, 68, 68, 0.2588235294);
   background-color: white;
-  z-index: 4;
   border-radius: 5px;
   display: none;
 }

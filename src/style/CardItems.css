@@ -162,6 +162,7 @@
   height: 150vh;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
+  z-index: 5;
 }
 .filter_container .filter_options {
   position: absolute;
