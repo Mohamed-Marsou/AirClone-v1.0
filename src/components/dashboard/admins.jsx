@@ -16,7 +16,7 @@ const Admins = () => {
                             <table className="table text-gray-400 border-separate space-y-6 text-sm">
                                 <thead className="bg-gray-800 text-gray-500">
                                     <tr>
-                                        <th className="p-3">Admin</th>
+                                        <th className="a-i" >admin info</th>
                                         <th className="p-3 text-left">Role</th>
                                         <th className="p-3 text-left">Status</th>
                                     </tr>
@@ -27,7 +27,7 @@ const Admins = () => {
                                             <div className="flex align-items-center">
                                                 <img className="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image" />
                                                 <div className="ml-3">
-                                                    <div className="">MTM</div>
+                                                    <div className="">Mohamed T Marsou</div>
                                                     <div className="text-gray-500">MTM@MTM.com</div>
                                                 </div>
                                             </div>
@@ -37,7 +37,7 @@ const Admins = () => {
                                         </td>
                                       
                                         <td className="p-3">
-                                            <span className="bg-green-400 text-gray-50 rounded-md px-2">active</span>
+                                            <span className="bg-green-400 text-gray-50 rounded-md px-3 py-1">active</span>
                                         </td>
                                     </tr>
                                   

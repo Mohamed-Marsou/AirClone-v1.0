@@ -297,11 +297,17 @@ aside .logOut:hover {
   border-radius: 5px;
 }
 
-.Page {
+.Pagenation {
   margin: 4rem 50% !important;
-  transform: translateX(-10%);
+  transform: translateX(-10%) !important;
+  min-height: 2rem;
 }
 
 .title {
   color: azure;
+}
+
+.a-i {
+  text-align: left;
+  padding: 0 1rem;
 }/*# sourceMappingURL=dashboard.css.map */

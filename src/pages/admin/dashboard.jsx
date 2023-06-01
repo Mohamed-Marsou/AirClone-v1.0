@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../style/dashboard.css"
-import Logo from "../assets/airbnb.png"
+import "../../style/dashboard.css"
+import Logo from "../../assets/airbnb.png"
 import { BiArrowToLeft } from 'react-icons/bi';
 import { BiHomeAlt2 } from 'react-icons/bi';
 import { AiOutlineFileSearch } from 'react-icons/ai';
@@ -13,12 +13,12 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { IoMdNotifications } from 'react-icons/io';
 import { TbMessageCircle2Filled } from 'react-icons/tb';
 import { MdOutlineAdminPanelSettings } from 'react-icons/md';
-import MainView from "../components/dashboard/Main"
-import AporoveListings from "../components/dashboard/AporoveListings"
-import Admins from "../components/dashboard/admins"
-import Listings from "../components/dashboard/Listings"
-import Messages from "../components/dashboard/messages"
-import Users from "../components/dashboard/Users"
+import MainView from "../../components/dashboard/Main"
+import AporoveListings from "../../components/dashboard/AporoveListings"
+import Admins from "../../components/dashboard/admins"
+import Listings from "../../components/dashboard/Listings"
+import Messages from "../../components/dashboard/messages"
+import Users from "../../components/dashboard/Users"
 
 const Dashboard = () => {
     const [closed, setClosed] = useState(true);

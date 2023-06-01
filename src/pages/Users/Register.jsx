@@ -1,9 +1,9 @@
 import React from "react"
-import "../style/login.css"
-import Footer from "../components/Footer"
-import Nav from "../components/Nav"
-import MobileNav from "../components/MobileNav"
-import Logo from "../assets/airbnb.png"
+import "../../style/login.css"
+import Footer from "../../components/Footer"
+import Nav from "../../components/Nav"
+import MobileNav from "../../components/MobileNav"
+import Logo from "../../assets/airbnb.png"
 
 const Register = () => {
     return (

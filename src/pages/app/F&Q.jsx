@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-import MobileNav from "../components/MobileNav";
+import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
+import MobileNav from "../../components/MobileNav";
 
 const FAQ = () => {
     return (
