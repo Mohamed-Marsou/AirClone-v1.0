@@ -121,6 +121,7 @@ const CartItem = ({ articles }) => {
                             <img src={asia} title="Asia" alt="Asia" />
                         </div>
                     </div>
+
                     <div className="slot">
                         <p>Who</p>
                         <div className="boxes">
