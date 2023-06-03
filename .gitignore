@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Dependency directories
 /node_modules
 
@@ -18,3 +19,6 @@
 # IDE files
 .vscode/
 .idea/
+=======
+node_modules
+>>>>>>> Stashed changes
