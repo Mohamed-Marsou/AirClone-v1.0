@@ -1,11 +1,10 @@
-<<<<<<< Updated upstream
 # Dependency directories
 /node_modules
 
 # Build directories
 /build
 /dist
-
+/vendor
 # Environment files
 .env
 .env.local
@@ -19,6 +18,4 @@
 # IDE files
 .vscode/
 .idea/
-=======
-node_modules
->>>>>>> Stashed changes
+
