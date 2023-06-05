@@ -22,16 +22,41 @@ class ListingController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
-        //
+{
+    try {
+        // Validate the request data
+        $validatedData = $request->validate([
+            'user_id' => 'required|exists:users,id',
+            'title' => 'required|string',
+            'description' => 'required|string',
+            'price' => 'required|numeric',
+            'cover_image' => 'required|string',
+            'location' => 'required|string',
+            'features' => 'nullable|array',
+        ]);
+
+        // Create the listing
+        $listing = Listing::create($validatedData);
+
+        return response()->json([
+            'message' => 'Listing created successfully.',
+            'listing' => $listing,
+        ], 201);
+        } catch (Exception $e) {
+        return response()->json([
+            'message' => 'Failed to create the listing.',
+            'error' => $e->getMessage(),
+        ], 500);
     }
+}
 
     /**
      * Display the specified resource.
      */
     public function show(string $id)
     {
-        //
+        $listing = Listing::find($id);
+        return response()->json($listing);
     }
 
     /**
@@ -39,7 +64,35 @@ class ListingController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        try {
+            // Validate the request data
+            $validatedData = $request->validate([
+                'user_id' =>'required|exists:users,id',
+                'title' =>'required|string',
+                'description' =>'required|string',
+                'price' =>'required|numeric',
+                'cover_image' =>'required|string',
+                'location' =>'required|string',
+                'features' => 'nullable|array',
+            ]); 
+            
+            // Update the listing
+            $listing = Listing::find($id);
+            $listing->update($validatedData);
+            
+            return response()->json([
+               'message' => 'Listing updated successfully.',
+                'listing' => $listing,
+            ], 200);
+            
+        } catch (Exception $e) {
+            return response()->json([
+               'message' => 'Failed to update the listing.',
+                'error' => $e->getMessage(),
+            ], 500);
+    
+        
+        }
     }
 
     /**
@@ -47,6 +100,18 @@ class ListingController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $listing = Listing::find($id);
+    
+        if (!$listing) {
+            return response()->json([
+                'message' => 'Listing not found.'
+            ], 404);
+        }
+    
+        $listing->delete();
+    
+        return response()->json([
+            'message' => 'Listing deleted successfully.'
+        ], 201);
     }
 }

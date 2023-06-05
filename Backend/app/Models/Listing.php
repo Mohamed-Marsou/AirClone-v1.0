@@ -8,6 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Listing extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'user_id',
+        'title',
+        'description',
+        'price',
+        'cover_image',
+        'location',
+        'features',
+    ];
     public function user()
 {
     return $this->belongsTo(User::class);
