@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "../components/Nav.jsx";
-import MobileNav from "../components/MobileNav.jsx"
-import Footer from "../components/Footer.jsx"
+import Nav from "../../components/Nav.jsx";
+import MobileNav from "../../components/MobileNav.jsx"
+import Footer from "../../components/Footer.jsx"
 // import Swiper 
 import { Navigation} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 //my styles
-import "../style/Properties.css"
+import "../../style/Properties.css"
 //date picker 
 import { DatePicker, FlexboxGrid, InputGroup } from 'rsuite';
 //dropdown menu
